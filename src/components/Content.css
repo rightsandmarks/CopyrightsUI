@@ -1,0 +1,59 @@
+/* .homePageBullets li:before {    
+    font-family: 'FontAwesome';
+    content: '\f067';
+    margin:0 5px 0 -15px;
+    color: #f00;
+} */
+
+.inner-shadow{
+    box-shadow: inset 0 0 15px #B17F2B;
+    
+}
+
+  .ticket {
+    position: relative;
+    overflow: hidden;
+    border-style: none;
+    box-shadow: none;
+    border: 0;
+  }
+  
+  .ticket::before,
+  .ticket::after {
+    content: "";
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    background-color: #F6FAFF;
+    border-radius: 50%;
+  }
+  
+  .ticket::before {
+    top: -50px;
+    left: -50px;
+  }
+  
+  .ticket::after {
+    top: -50px;
+    right: -50px;
+  }
+  
+  .ticket .bottom-circles::before,
+  .ticket .bottom-circles::after {
+    content: "";
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    background-color: #F6FAFF;
+    border-radius: 50%;
+  }
+  
+  .ticket .bottom-circles::before {
+    bottom: -50px;
+    left: -50px;
+  }
+  
+  .ticket .bottom-circles::after {
+    bottom: -50px;
+    right:-50px;
+  }
